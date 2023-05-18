@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-stone-400 p-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -48,6 +48,10 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-3xl font-extrabold">
+          <img className="w-10 h-10 rounded-full mr-4"
+            src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
           <span className="text-rose-300">Toy</span> &nbsp;
           <span className="text-stone-600">World</span>
         </a>
