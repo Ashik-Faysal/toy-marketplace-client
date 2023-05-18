@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slider = () => {
     return (
-      <div className="carousel w-full">
+      <div className="carousel w-full h-[70vh]">
         <div id="slide1" className="carousel-item relative w-full">
           <img
             src="https://images.unsplash.com/photo-1558877385-81a1c7e67d72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG95fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
