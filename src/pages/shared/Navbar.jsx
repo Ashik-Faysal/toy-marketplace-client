@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .then((error) => console.log(error));
+  };
+
   return (
     <div className="navbar bg-stone-400 p-4">
       <div className="navbar-start">
@@ -48,7 +57,8 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-3xl font-extrabold">
-          <img className="w-10 h-10 rounded-full mr-4"
+          <img
+            className="w-10 h-10 rounded-full mr-4"
             src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
           />
@@ -59,18 +69,48 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <button className="btn btn-outline">Home </button>
+            <Link to="/" className="btn btn-outline">
+              Home
+            </Link>
           </li>
           <li tabIndex={0}>
-            <button className="btn btn-outline mx-4">Blog</button>
+            <Link to="/blog" className="btn btn-outline mx-4">
+              Blog
+            </Link>
           </li>
           <li>
-            <button className="btn btn-outline">About</button>
+            <Link to="/about" className="btn btn-outline">
+              About
+            </Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Get started</a>
+      <div className="md:ml-4 flex gap-2 navbar-end">
+        {user ? (
+          <>
+            <Link>
+              <button className="btn btn-outline">Add A Toy</button>
+            </Link>
+            <Link>
+              <button className="btn btn-outline">My Toys</button>
+            </Link>
+            <img
+              className="w-12 h-12 rounded-full"
+              src={user.photoURL}
+              alt=""
+            />
+            <button
+              onClick={handleLogOut}
+              className="btn btn-warning ml-4 md:ml-0 mt-4 md:mt-0"
+            >
+              Sign Out
+            </button>
+          </>
+        ) : (
+          <Link to="/login">
+            <button className="btn btn-warning">Sign In</button>
+          </Link>
+        )}
       </div>
     </div>
   );
