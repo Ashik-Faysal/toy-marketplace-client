@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ToyCard from "./ToyCard";
+import Card from "./Card";
 
-const Toys = () => {
+const PhotoGallery = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
@@ -14,14 +14,16 @@ const Toys = () => {
   }, []);
   return (
     <div className="my-8">
-      <h1 className="text-5xl my-3 text-center font-bold text-stone-500">Toys Gallery</h1>
+      <h1 className="text-5xl my-3 text-center font-bold text-stone-500">
+        Toys Gallery
+      </h1>
       <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 shadow-2xl bg-stone-200 my-8">
         {toys.map((toy) => (
-          <ToyCard key={toy._id} toy={toy} />
+          <Card key={toy._id} toy={toy} />
         ))}
       </div>
     </div>
   );
 };
 
-export default Toys;
+export default PhotoGallery;

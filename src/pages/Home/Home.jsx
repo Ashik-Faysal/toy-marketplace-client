@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "./Slider";
-import Toys from "../Toys/Toys";
 import SubCategory from "./SubCategory";
+import PhotoGallery from "./PhotoGallery";
 
 const Home = () => {
   return (
     <>
       <Slider />
-      <Toys />
+      <PhotoGallery />
       <SubCategory />
     </>
   );
