@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
-  const { user, createUser, userProfile } =useContext(AuthContext);
+  const { user, createUser, userProfile } = useContext(AuthContext);
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -28,9 +28,12 @@ const Register = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Please Register!</h1>
+          <h1 className="text-5xl font-bold">
+            <span className="text-orange-500">Please</span>{" "}
+            <span className="text-stone-600">Register!</span>
+          </h1>
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-black">
           <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
               <label className="label">
@@ -82,7 +85,7 @@ const Register = () => {
               <label className="label">
                 <Link
                   to="/login"
-                  className="p-1 label-text-alt link link-hover"
+                  className="p-1 label-text-alt link link-hover text-white"
                 >
                   Have Already an Account? Please Login
                 </Link>
