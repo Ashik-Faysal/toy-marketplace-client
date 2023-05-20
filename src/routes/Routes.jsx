@@ -8,6 +8,7 @@ import Blog from "../pages/shared/Blog";
 import PrivateRoute from "../Providers/PrivateRoute";
 import Toys from "../pages/Toys/Toys";
 import SingleToy from "../pages/Toys/SingleToy";
+import AddToys from "../pages/Toys/addToys";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
           fetch(
             `https://toy-world-server-ashik-faysal.vercel.app/toys/${params.id}`
           ),
+      },
+      {
+        path: "/addToys",
+        element: <AddToys />,
       },
     ],
   },

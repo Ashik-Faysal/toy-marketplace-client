@@ -93,7 +93,7 @@ const Navbar = () => {
       <div className="md:ml-4 flex gap-2 navbar-end">
         {user ? (
           <>
-            <Link>
+            <Link to="/addToys">
               <button className="btn btn-outline">Add A Toy</button>
             </Link>
             <Link>

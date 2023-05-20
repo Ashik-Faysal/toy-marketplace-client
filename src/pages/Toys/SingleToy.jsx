@@ -14,12 +14,7 @@ const SingleToy = () => {
         <p>Seller Name: {toys.seller}</p>
         <p>Price: {toys.price}</p>
         <p>SubCategory: {toys.subCategory}</p>
-        <p> Description: 
-          The Cuddle Buddies Baby Toy is the perfect companion for your little
-          one. This adorable plush toy is designed with the utmost care and
-          attention to provide a safe and stimulating play experience for
-          babies.
-        </p>
+        <p>Description: {toys.description}</p>
       </div>
     </div>
   );
