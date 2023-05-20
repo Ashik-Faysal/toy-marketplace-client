@@ -8,7 +8,7 @@ const Toys = () => {
     fetch("https://toy-world-server-ashik-faysal.vercel.app/toys")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setToys(data); // Store the fetched data in state
       });
   }, []);

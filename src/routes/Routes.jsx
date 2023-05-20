@@ -7,6 +7,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Blog from "../pages/shared/Blog";
 import PrivateRoute from "../Providers/PrivateRoute";
 import Toys from "../pages/Toys/Toys";
+import SingleToy from "../pages/Toys/SingleToy";
 
 const router = createBrowserRouter([
   {
@@ -33,11 +34,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/toys",
+        element: <Toys></Toys>,
+      },
+      {
+        path: "/toys/:id",
         element: (
           <PrivateRoute>
-            <Toys></Toys>
+            <SingleToy></SingleToy>
           </PrivateRoute>
         ),
+        loader: ({ params }) =>
+          fetch(
+            `https://toy-world-server-ashik-faysal.vercel.app/toys/${params.id}`
+          ),
       },
     ],
   },
