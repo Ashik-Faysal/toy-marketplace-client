@@ -1,13 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TableData = ({ updateData, handleDelete, handleUpdate }) => {
-//   const handleDelete = () => {
-//     handleDelete(_id);
-//   };
-
-//   const handleUpdate = () => {
-//     handleUpdate(_id);
-//   };
 
   return (
     <>
@@ -33,12 +27,22 @@ const TableData = ({ updateData, handleDelete, handleUpdate }) => {
         <td>{updateData?.rating}</td>
         <td>{updateData?.availableQuantity}</td>
         <th>
-          <button onClick={()=>handleUpdate(updateData?._id)} className="btn btn-ghost btn-xs">
-            Update
-          </button>
+          <Link to="/updateAToys">
+            <button
+              onClick={() => handleUpdate(updateData?._id)}
+              className="btn btn-ghost btn-xs"
+            >
+              Update
+            </button>
+          </Link>
         </th>
         <th>
-          <button onClick={()=>handleDelete(updateData?._id)} className="btn btn-ghost btn-xs">Delete</button>
+          <button
+            onClick={() => handleDelete(updateData?._id)}
+            className="btn btn-ghost btn-xs"
+          >
+            Delete
+          </button>
         </th>
       </tr>
     </>
