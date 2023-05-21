@@ -96,7 +96,7 @@ const Navbar = () => {
             <Link to="/addToys">
               <button className="btn btn-outline">Add A Toy</button>
             </Link>
-            <Link>
+            <Link to="myToys">
               <button className="btn btn-outline">My Toys</button>
             </Link>
             <img

@@ -65,6 +65,7 @@ const AddToys = () => {
   };
   return (
     <div>
+      <h2 className="text-5xl font-bold text-stone-500 text-center p-4">Add A Toy</h2>
       <form onSubmit={handleAddToys}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="form-control">
@@ -170,7 +171,6 @@ const AddToys = () => {
         </div>
         <ToastContainer />
       </form>
-      <div className="card-body"></div>
     </div>
   );
 };
