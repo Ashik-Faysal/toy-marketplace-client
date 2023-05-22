@@ -36,7 +36,7 @@ const UpdatingToys = () => {
         }
       });
   };
-console.log(updating);
+// console.log(updating);
   const handleDelete = (id) => {
     const proceed = confirm("Are You sure you want to delete");
     if (proceed) {

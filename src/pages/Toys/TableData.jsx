@@ -27,7 +27,7 @@ const TableData = ({ updateData, handleDelete, handleUpdate }) => {
         <th>
           <Link to="/updateAToys">
             <button
-              onClick={() => handleUpdate(updateData?._id)}
+              onClick={() => handleUpdate(updateData._id)}
               className="btn btn-ghost btn-xs"
             >
               Update

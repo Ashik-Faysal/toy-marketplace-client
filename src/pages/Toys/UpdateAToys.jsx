@@ -2,14 +2,42 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const UpdateAToys = ({handleUpdate}) => {
-    const {user}= useContext(AuthContext)
+  const { user } = useContext(AuthContext);
+
+  const handleUpdateToys = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const name = form.sellerName.value;
+    const toyName = form.toyName.value;
+    const photoUrl = form.photoUrl.value;
+    const email = user?.email;
+    const subCategory = form.subCategory.value;
+    const price = form.price.value;
+    const ratings = form.ratings.value;
+    const quantity = form.quantity.value;
+    const description = form.description.value;
+
+    const adding = {
+      sellerName: name,
+      toyName,
+      photoUrl,
+      email,
+      subCategory,
+      price,
+      ratings,
+      quantity,
+      description,
+    };
+
+  }
     return (
       <div>
         <h2 className="text-5xl font-bold text-stone-500 text-center p-4">
           Update A Toy
         </h2>
             <form
-                // onSubmit={handleAddToys}
+                onSubmit={handleUpdateToys}
             >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="form-control">
