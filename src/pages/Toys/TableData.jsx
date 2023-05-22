@@ -12,20 +12,18 @@ const TableData = ({ updateData, handleDelete, handleUpdate }) => {
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
                 <img
-                  src={updateData?.image}
+                  src={updateData?.photoUrl}
                   alt="Avatar Tailwind CSS Component"
                 />
               </div>
             </div>
-            <div>
-              <div className="font-bold">{updateData?.seller}</div>
-            </div>
           </div>
         </td>
         <td>{updateData?.toyName}</td>
+        <td>{updateData?.sellerName}</td>
         <td>{updateData?.price}</td>
-        <td>{updateData?.rating}</td>
-        <td>{updateData?.availableQuantity}</td>
+        <td>{updateData?.ratings}</td>
+        <td>{updateData?.quantity}</td>
         <th>
           <Link to="/updateAToys">
             <button

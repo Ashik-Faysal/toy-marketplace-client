@@ -36,7 +36,7 @@ const AddToys = () => {
 
     console.log(adding);
 
-    fetch("https://toy-world-server-ashik-faysal.vercel.app/toys", {
+    fetch("https://toy-world-server-ashik-faysal.vercel.app/my-toys", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

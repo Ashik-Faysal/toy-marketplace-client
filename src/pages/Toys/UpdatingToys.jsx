@@ -6,7 +6,7 @@ const UpdatingToys = () => {
   const [updating, setUpdating] = useState([]);
   const { user } = useContext(AuthContext);
   
-  const url = `https://toy-world-server-ashik-faysal.vercel.app/toys?email=${user?.email}`;
+  const url = `https://toy-world-server-ashik-faysal.vercel.app/my-toys?email=${user?.email}`;
   useEffect(() => {
     fetch(url).then(res=>res.json()).then(data=>setUpdating(data));
   },[])
@@ -14,7 +14,7 @@ const UpdatingToys = () => {
 
   const handleUpdate = (id) => {
     fetch(
-      `https://toy-world-server-ashik-faysal.vercel.app/toys/${id}`,
+      `https://toy-world-server-ashik-faysal.vercel.app/my-toys/${id}`,
       {
         method: "PATCH",
         headers: {
@@ -40,7 +40,7 @@ console.log(updating);
   const handleDelete = (id) => {
     const proceed = confirm("Are You sure you want to delete");
     if (proceed) {
-      fetch(`https://toy-world-server-ashik-faysal.vercel.app/toys/${id}`, {
+      fetch(`https://toy-world-server-ashik-faysal.vercel.app/my-toys/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

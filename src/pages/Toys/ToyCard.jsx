@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const ToyCard = ({ toy }) => {
   const { _id, seller, toyName, subCategory, price, availableQuantity, image } =
     toy;
+  console.log(toy);
   // Define the handleShowDetails function
   const handleShowDetails = (id) => {
     console.log(id);
