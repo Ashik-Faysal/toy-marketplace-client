@@ -13,7 +13,7 @@ const PhotoGallery = () => {
       });
   }, []);
   return (
-    <div className="my-8">
+    <div className="my-8" data-aos="fade-up">
       <h1 className="text-5xl my-3 text-center font-bold text-stone-500">
         Toys Gallery
       </h1>

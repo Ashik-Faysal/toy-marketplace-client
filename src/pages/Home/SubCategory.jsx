@@ -4,8 +4,10 @@ import "react-tabs/style/react-tabs.css";
 
 const SubCategory = () => {
   return (
-      <div>
-          <h2 className="text-6xl font-extrabold text-stone-500 text-center my-4">Search by Category</h2>
+    <div data-aos="fade-up">
+      <h2 className="text-6xl font-extrabold text-stone-500 text-center my-4">
+        Search by Category
+      </h2>
       <Tabs>
         <TabList>
           <Tab>FootBall</Tab>
