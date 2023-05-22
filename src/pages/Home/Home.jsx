@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Slider from "./Slider";
 import SubCategory from "./SubCategory";
 import PhotoGallery from "./PhotoGallery";
+import MyFristSection from "./MyFristSection";
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Slider />
       <PhotoGallery />
       <SubCategory />
+      <MyFristSection/>
     </>
   );
 };
