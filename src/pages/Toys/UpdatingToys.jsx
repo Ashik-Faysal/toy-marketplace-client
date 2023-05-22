@@ -20,7 +20,7 @@ const UpdatingToys = () => {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({ status: "confirm" }),
+        body: JSON.stringify(id),
       }
     )
       .then((res) => res.json())
