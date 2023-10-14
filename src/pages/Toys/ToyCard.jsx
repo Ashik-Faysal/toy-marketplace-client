@@ -10,7 +10,7 @@ const ToyCard = ({ toy }) => {
     console.log(id);
   };
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
+    <div className="card w-full bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900 shadow-xl">
       <figure>
         <img src={image} alt="Shoes" className="rounded-xl w-full" />
       </figure>

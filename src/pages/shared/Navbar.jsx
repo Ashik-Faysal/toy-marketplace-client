@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-stone-400 p-4">
+    <div className="navbar bg-gradient-to-tl from-green-700 via-teal-800 to-cyan-900 p-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gradient-to-tr from-teal-600 via-cyan-700 to-blue-800 rounded-box w-52"
           >
             <li>
               <a>Home</a>
@@ -62,8 +62,9 @@ const Navbar = () => {
             src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
           />
-          <span className="text-rose-300">Toy</span> &nbsp;
-          <span className="text-stone-600">World</span>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500">
+            Sportify Pro
+          </span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -84,9 +85,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="btn btn-outline">
-              About
-            </Link>
+            <Link className="btn btn-outline">About</Link>
           </li>
         </ul>
       </div>

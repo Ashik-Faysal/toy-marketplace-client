@@ -12,7 +12,10 @@ const Blog = () => {
     <div className="text-center">
       <div>
         {blogs.map((blog) => (
-          <div className="card border p-4 my-4 bg-slate-500" key={blog.id}>
+          <div
+            className="card border p-4 my-4 bg-gradient-to-tr from-teal-600 via-cyan-700 to-blue-800"
+            key={blog.id}
+          >
             <p className="font-bold">
               {blog.id}. &nbsp;{blog.question}
             </p>

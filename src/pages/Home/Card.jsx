@@ -4,7 +4,7 @@ const Card = ({ toy }) => {
   const { _id, seller, toyName, subCategory, price, availableQuantity, image } =
     toy;
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
+    <div className="card w-full bg-gradient-to-tr from-teal-600 via-cyan-700 to-blue-800 shadow-xl">
       <figure>
         <img src={image} alt="Shoes" className="rounded-xl w-full" />
       </figure>

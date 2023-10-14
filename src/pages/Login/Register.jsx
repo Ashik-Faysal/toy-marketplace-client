@@ -25,15 +25,14 @@ const Register = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-gradient-to-r from-teal-500 via-cyan-600 to-blue-700">
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">
-            <span className="text-orange-500">Please</span>{" "}
-            <span className="text-stone-600">Register!</span>
+          <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 via-cyan-900 to-blue-900">
+            Please Register
           </h1>
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-black">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-slate-900 via-purple-900 to-slate-900">
           <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
               <label className="label">

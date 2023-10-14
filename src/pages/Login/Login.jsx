@@ -31,7 +31,7 @@ const Login = () => {
   };
   return (
     <>
-      <div className="hero min-h-screen bg-stone-200">
+      <div className="hero min-h-screen bg-gradient-to-r from-teal-500 via-cyan-600 to-blue-700">
         <div className="md:hero-content">
           <div>
             <iframe
@@ -40,8 +40,10 @@ const Login = () => {
               height="450"
             ></iframe>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm bg-black  shadow-2xl">
-            <h1 className="text-5xl font-bold text-center text-stone-500">Please Login !</h1>
+          <div className="card flex-shrink-0 w-full max-w-sm bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-slate-900 via-purple-900 to-slate-900  shadow-2xl">
+            <h1 className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500">
+              Please Login !
+            </h1>
             <form onSubmit={handleLogin} className="card-body rounded-lg">
               <div className="form-control">
                 <label className="label">

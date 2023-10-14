@@ -1,4 +1,4 @@
-#  Toy-World Repository
+#  Sportify Pro Repository
 * Create a navbar and footer section on this page. 
 * Added three category and every category has to items. 
 * Added login and registration form buttons for this website and toggling between them

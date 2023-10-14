@@ -17,7 +17,7 @@ const PhotoGallery = () => {
       <h1 className="text-5xl my-3 text-center font-bold text-stone-500">
         Toys Gallery
       </h1>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 shadow-2xl bg-stone-200 my-8">
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 shadow-2xl bg-gradient-to-tr from-teal-600 via-cyan-700 to-blue-800 my-8">
         {toys.map((toy) => (
           <Card key={toy._id} toy={toy} />
         ))}

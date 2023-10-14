@@ -5,7 +5,7 @@ const SingleToy = () => {
   console.log(toys);
 
   return (
-    <div className="card w-96 bg-stone-400 shadow-2xl p-8 m-8">
+    <div className="card w-96 bg-gradient-to-tr from-teal-600 via-cyan-700 to-blue-800 shadow-2xl p-8 m-8">
       <figure>
         <img src={toys.image} alt="Shoes" />
       </figure>

@@ -13,9 +13,11 @@ const Toys = () => {
       });
   }, []);
   return (
-    <div className="my-8">
-      <h1 className="text-5xl my-3 text-center font-bold text-stone-500">Toys Gallery</h1>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 shadow-2xl bg-stone-200 my-8">
+    <div className="my-8 bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
+      <h1 className="text-5xl my-3 text-center font-bold text-stone-500">
+        Toys Gallery
+      </h1>
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 shadow-2xl my-8">
         {toys.map((toy) => (
           <ToyCard key={toy._id} toy={toy} />
         ))}

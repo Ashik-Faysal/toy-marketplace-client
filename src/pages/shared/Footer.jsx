@@ -2,12 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-stone-400 text-base-content rounded">
-      <img className="rounded-full w-32"
+    <footer className="footer footer-center p-10 bg-gradient-to-tl from-green-700 via-teal-800 to-cyan-900text-base-content rounded">
+      <img
+        className="rounded-full w-32"
         src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
         alt=""
       />
-      <h2 className="text-5xl text-slate-600 font-extrabold">Toy World</h2>
+      <h2 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500">
+        Sportify Pro
+      </h2>
       <div className="grid grid-flow-col gap-4 font-bold">
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
@@ -53,7 +56,7 @@ const Footer = () => {
       </div>
       <div>
         <p className="text-warning">
-          Copyright © 2023 - All right reserved by Toy World
+          Copyright © 2023 - All right reserved by Sportify Pro
         </p>
       </div>
     </footer>
